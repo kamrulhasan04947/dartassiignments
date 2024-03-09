@@ -15,6 +15,7 @@ class Song extends Media {
 }
 
 void main() {
+  //instantiating Media and Song class
   Media media = Media();
   Song song = Song(artist: 'Arjit Sing');
   //calling play method from Media and Song class instance
