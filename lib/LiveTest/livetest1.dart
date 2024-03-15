@@ -28,6 +28,7 @@ void main(){
     {'name': 'Apple', 'color':'red', 'price': 13.5},
     {'name': 'Orange', 'color':'Orange', 'price': 15.3},
   ];
+  print('Original Fruit Details before Discount:\n');
   displayFruitsDetails(fruits);
   applyPriceDiscount(fruits, 12);
   displayFruitsDetails(fruits);
@@ -35,7 +36,6 @@ void main(){
 
 
 void displayFruitsDetails(List<Map<String, dynamic>> fruits){
-  print('Original Fruit Details before Discount:\n');
   for(var fruit in fruits){
     print('Name: ${fruit['name']}, Color: ${fruit['color']} , Price: \$${fruit['price']}');
   }
@@ -43,8 +43,7 @@ void displayFruitsDetails(List<Map<String, dynamic>> fruits){
 
 
 void applyPriceDiscount(List<Map<String, dynamic>> fruits, int discountPercentage){
-  print('Fruit Details After Applying $discountPercentage % Discount:\n');
-
+  print('Fruit Details After Applying $discountPercentage% Discount:\n');
   for (var fruit in fruits) {
     double originalPrice = fruit['price'];
     double discountedPrice = originalPrice - (originalPrice * discountPercentage / 100);
