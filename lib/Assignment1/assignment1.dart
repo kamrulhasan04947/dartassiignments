@@ -10,7 +10,7 @@ class Song extends Media {
   //override play() methode of supper class
   @override
   void play() {
-    print('Playing Song by $artist');
+    print('Playing Song by $artist...');
   }
 }
 
